@@ -217,12 +217,10 @@ If you use Antashiri in your research, please cite our paper:
 @inproceedings{antashiri2025,
   title={LLM-Enhanced Contextual Music Triggering with Explainable AI},
   author={Anonymous Authors},
-  booktitle={Proceedings of the 26th International Society for Music Information Retrieval Conference},
+  workshop={LLM4MA: Large Language Models for Music & Audio - Satellite event(ISMIR)}
   year={2025},
   address={Daejeon, South Korea},
-  pages={1--4},
-  doi={10.5281/zenodo.antashiri}
-}
+  }
 ```
 
 ### **Related Publications**
