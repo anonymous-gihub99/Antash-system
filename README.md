@@ -86,6 +86,9 @@
 
 ## 🚀 **Quick Start with Jupyter Notebook**
 
+# Clone the repo
+git clone https://github.com/anonymous-gihub99/Antash-system.git
+
 # 1. Setup environment
 python -m venv venv && source venv/bin/activate
 
