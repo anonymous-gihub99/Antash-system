@@ -89,31 +89,31 @@
 # Clone the repo
 git clone https://github.com/anonymous-gihub99/Antash-system.git
 
-# 1. Setup environment
+## 1. Setup environment
 python -m venv venv && source venv/bin/activate
 
-# 2. Install packages
+## 2. Install packages
 ### Antashri-system/Antashri_system
 pip install -r requirements.txt
 
-# 3. Configure
-# Antashri-system/Antashri_system/utils
+## 3. Configure
+### Antashri-system/Antashri_system/utils
 cp .env.example .env
 
-# 4. Generate data
+## 4. Generate data
 ### Antashri-system/Antashri_system/scripts
 python scripts/generate_synthetic_dataset.py
 
-# 5. Run complete setup
+## 5. Run complete setup
 ### Antashri-system/Antashri_system
 python antashiri_main.py setup
 
-# 6. Start system
+## 6. Start system
 ### Antashri-system/Antashri_system
 python antashiri_main.py run
 
-# 7. Open browser
-# Go to http://localhost:5000
+## 7. Open browser
+## Go to http://localhost:5000
 
 The notebook will automatically:
 - ✅ Install all dependencies
