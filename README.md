@@ -86,29 +86,31 @@
 
 ## 🚀 **Quick Start with Jupyter Notebook**
 
-Get Antashiri running in **under 5 minutes** with our interactive notebook!
+# 1. Setup environment
+python -m venv venv && source venv/bin/activate
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/yourusername/antashiri.git
-cd antashiri
-```
+# 2. Install packages
+# Antashri-system/Antashri_system
+pip install -r requirements.txt
 
-### **2. Launch Jupyter Notebook**
-```bash
-# Install Jupyter if needed
-pip install jupyter
+# 3. Configure
+# Antashri-system/Antashri_system/utils
+cp .env.example .env
 
-# Start the notebook
-jupyter notebook Antashiri_Complete_System.ipynb
-```
+# 4. Generate data
+# Antashri-system/Antashri_system/scripts
+python scripts/generate_synthetic_dataset.py
 
-### **3. Run All Cells**
-Simply click **`Cell → Run All`** or press **`Shift + Enter`** through each cell:
+# 5. Run complete setup
+# Antashri-system/Antashri_system
+python antashiri_main.py setup
 
-<div align="center">
-<img src="docs/images/notebook_demo.gif" alt="Notebook Demo" width="80%">
-</div>
+# 6. Start system
+# Antashri-system/Antashri_system
+python antashiri_main.py run
+
+# 7. Open browser
+# Go to http://localhost:5000
 
 The notebook will automatically:
 - ✅ Install all dependencies
