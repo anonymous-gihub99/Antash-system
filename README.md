@@ -18,8 +18,6 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Paper](https://img.shields.io/badge/Paper-ISMIR%202025-green.svg)](https://ismir2025.ismir.net)
-[![Demo](https://img.shields.io/badge/🎵_Live_Demo-Online-purple.svg)](https://antashiri-demo.github.io)
 [![Hugging Face](https://img.shields.io/badge/🤗_Models-Hugging_Face-orange.svg)](https://huggingface.co/spaces/antashiri/demo)
 
 </div>
@@ -71,11 +69,11 @@
 ## 📊 **System Performance**
 
 <div align="center">
-<img src="docs/images/emotional_journey.png" alt="Emotional Journey" width="45%">
-<img src="docs/images/stability_graph.png" alt="Stability Tracking" width="45%">
+<img src="emotional_journey.png" alt="Emotional Journey" width="45%">
+<img src="stability_graph.png" alt="Stability Tracking" width="45%">
 <br>
-<img src="docs/images/performance_comparison.png" alt="Performance Metrics" width="45%">
-<img src="docs/images/system_architecture.png" alt="System Architecture" width="45%">
+<img src="performance_comparison.png" alt="Performance Metrics" width="45%">
+<img src="system_architecture.png" alt="System Architecture" width="45%">
 </div>
 
 | **Metric** | **Our System** | **Baseline** | **Improvement** |
@@ -85,23 +83,6 @@
 | User Satisfaction | 4.1/5 | 2.1/5 | **+95%** |
 | XAI Quality | 95% | N/A | **Novel** |
 
----
-
-## 🎮 **Live Demo**
-
-<div align="center">
-
-### [**🎵 Try Antashiri Live**](https://antashiri-demo.github.io)
-
-<a href="https://antashiri-demo.github.io">
-  <img src="docs/images/demo_screenshot.png" alt="Demo Interface" width="70%">
-</a>
-
-**Experience the magic yourself!** Click above to access our live demo.
-
-</div>
-
----
 
 ## 🚀 **Quick Start with Jupyter Notebook**
 
@@ -214,12 +195,6 @@ Stability = {
 
 ## 🌟 **Future Work**
 
-### **🏥 Healthcare Applications**
-- **Speech Therapy**: Customized trigger word training for articulation improvement
-- **Dementia Care**: Musical memory stimulation and cognitive monitoring
-- **Anxiety Management**: Real-time stress detection and calming intervention
-- **Autism Support**: Emotional regulation through familiar music patterns
-
 ### **🔧 Technical Enhancements**
 - **Multi-modal Emotion**: Integrate facial expressions and voice prosody
 - **Personalization**: User-specific emotional profiles and music preferences
@@ -270,48 +245,6 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## 💬 **Community & Support**
-
-<div align="center">
-
-[![Discord](https://img.shields.io/badge/Discord-Join_Server-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/antashiri)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/antashiri_ai)
-[![YouTube](https://img.shields.io/badge/YouTube-Demo_Videos-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@antashiri)
-
-</div>
-
-### **Get Help**
-- 📧 Email: [antashiri@example.com](mailto:antashiri@example.com)
-- 💬 Discord: [Join our community](https://discord.gg/antashiri)
-- 🐛 Issues: [Report bugs](https://github.com/yourusername/antashiri/issues)
-- 📖 Docs: [Full documentation](https://antashiri.readthedocs.io)
-
----
-
-## 📈 **Project Stats**
-
-<div align="center">
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/antashiri?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/antashiri?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/antashiri?style=social)
-
-![Lines of code](https://img.shields.io/tokei/lines/github/yourusername/antashiri)
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/antashiri)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/antashiri)
-
-</div>
-
----
-
-## 🏆 **Awards & Recognition**
-
-- 🥇 **ISMIR 2025** - Best Paper Nominee
-- 🌟 **GitHub Trending** - #1 in Music AI (Week of March 2025)
-- 🎵 **Product Hunt** - AI Product of the Day
-- 🤗 **Hugging Face** - Featured Space of the Month
-
----
 
 ## 📜 **License**
 
@@ -323,7 +256,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 - **Mistral AI** for the incredible Mistral-7B model
 - **OpenAI** for Whisper ASR technology
-- **ISMIR Community** for valuable feedback
+- **LLM4MA community** for valuable feedback
 - **All Contributors** who made this project possible
 
 ---
@@ -340,13 +273,11 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 **Made with ❤️ by the Antashiri Team**
 
-[Website](https://antashiri.ai) • [Paper](https://arxiv.org/antashiri) • [Demo](https://antashiri-demo.github.io) • [Documentation](https://docs.antashiri.ai)
-
 </div>
 
 ---
 
-## 📸 **Gallery**
+## 📸 **Gallery (will be updated)**
 
 <div align="center">
 <table>
