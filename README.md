@@ -93,7 +93,7 @@ git clone https://github.com/anonymous-gihub99/Antash-system.git
 python -m venv venv && source venv/bin/activate
 
 # 2. Install packages
-# Antashri-system/Antashri_system
+### Antashri-system/Antashri_system
 pip install -r requirements.txt
 
 # 3. Configure
@@ -101,15 +101,15 @@ pip install -r requirements.txt
 cp .env.example .env
 
 # 4. Generate data
-# Antashri-system/Antashri_system/scripts
+### Antashri-system/Antashri_system/scripts
 python scripts/generate_synthetic_dataset.py
 
 # 5. Run complete setup
-# Antashri-system/Antashri_system
+### Antashri-system/Antashri_system
 python antashiri_main.py setup
 
 # 6. Start system
-# Antashri-system/Antashri_system
+### Antashri-system/Antashri_system
 python antashiri_main.py run
 
 # 7. Open browser
