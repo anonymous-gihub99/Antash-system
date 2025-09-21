@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTASH-IRIS - ISMIR 2025 LLM4MA Workshop Poster - Print Version</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: white;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .poster {
+            width: 36in;
+            height: 24in;
+            background: white;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+            color: white;
+            padding: 20px 0.5in 20px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        
+        .header .author-info {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .header .workshop-info {
+            font-size: 16px;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 15px 0.5in 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            flex: 1;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 6px;
+        }
+
+        .section-icon {
+            font-size: 22px;
+            margin-right: 8px;
+        }
+        
+        .section-content p {
+            font-size: 14px;
+            line-height: 1.3;
+            color: #374151;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+        
+        .section-content li {
+            font-size: 13px;
+            line-height: 1.2;
+            color: #374151;
+            margin-bottom: 4px;
+        }
+
+        .section-content ul {
+            list-style-position: outside;
+            padding-left: 18px;
+        }
+
+        .figure-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .figure-image {
+            width: 100%;
+            height: 220px;
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #6c757d;
+            font-weight: 500;
+            overflow: hidden;
+        }
+
+        .figure-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .figure-caption {
+            font-size: 11px;
+            color: #4b5563;
+            font-weight: 600;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+            font-size: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .results-table th {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            padding: 6px 3px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 9px;
+        }
+
+        .results-table td {
+            border: 1px solid #d1d5db;
+            padding: 4px 3px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 9px;
+        }
+        
+        .results-table .label {
+            text-align: left;
+            font-weight: 700;
+            background: #f8fafc;
+        }
+        
+        .results-table tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .results-table tbody tr:hover {
+            background-color: #e0f2fe;
+        }
+        
+        .ablation-footnote {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #6b7280;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .best-score {
+            background: #dcfce7 !important;
+            font-weight: 700;
+            color: #166534;
+        }
+
+        .formula {
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 4px;
+            margin: 6px 0;
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            font-size: 12px;
+            border-left: 2px solid #3b82f6;
+        }
+        
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2c5aa0 100%);
+            color: white;
+            padding: 15px 0.5in 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer .logo {
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .footer .contact-info {
+            text-align: right;
+        }
+
+        .footer .contact-info p {
+            margin: 3px 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="header">
+            <h1>ANTASH-IRIS</h1>
+            <p class="subtitle">LLM-enhanced contextual music triggering with explainable AI</p>
+            <div class="author-info">
+                <p><strong>Maryam Fatima</strong></p>
+                <p>Independent</p>
+            </div>
+            <div class="workshop-info">
+                1st Workshop on Large Language Models for Music & Audio (LLM4MA) | ISMIR 2025
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="column">
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">📄</span>
+                        Abstract
+                    </h3>
+                    <div class="section-content">
+                        <p>
+                            We present ANTASH-IRIS, a preliminary proof-of-concept system demonstrating the feasibility of integrating Large Language Models (LLMs) with real-time speech processing for contextual music triggering. This work addresses the shift from explicit music requests to an ambient musical intelligence that interprets emotional states and conversational context.
+                        </p>
+                        <p>
+                            Our system leverages Mistral-7B-Instruct-v0.3 and Qwen2-4B embeddings to achieve contextual understanding while maintaining efficiency on a single GPU. This poster outlines our methodology, baseline comparisons, and initial results from over 5,000 test cases.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">🏗️</span>
+                        System Architecture
+                    </h3>
+                    <div class="section-content">
+                        <div class="figure-container">
+                            <div class="figure-image">
+                                <img src="system_architecture.png" alt="System Architecture Diagram">
+                            </div>
+                            <div class="figure-caption">
+                                Figure 1: LLM-Enhanced Contextual Music Triggering Pipeline with integrated processing components
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">⚙️</span>
+                        Methodology
+                    </h3>
+                    <div class="section-content">
+                        <ul>
+                            <li><b>Speech-to-Text:</b> Real-time transcription using lightweight speech recognition model</li>
+                            <li><b>Emotion Detection:</b> Multi-modal analysis combining keyword spotting, lexical analysis, and prosodic features</li>
+                            <li><b>LLM Core:</b> Mistral-7B (4-bit quantized) processes conversation for contextual cues and emotional nuances</li>
+                            <li><b>Music Retrieval:</b> Weighted scoring function combines context match, emotion relevance, and intensity similarity</li>
+                        </ul>
+                        <div class="formula">
+                            S(q, s) = α · S<sub>context</sub> + β · S<sub>emotion</sub> + γ · S<sub>intensity</sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">📊</span>
+                        Baseline Evaluation
+                    </h3>
+                    <div class="section-content">
+                        <p>Comparison of baseline models for emotion detection and music recommendation on 5,000 synthetic test cases:</p>
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>System</th>
+                                    <th>nDCG@10</th>
+                                    <th>MRR</th>
+                                    <th>Emotion F1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="label">Keyword</td>
+                                    <td class="best-score">0.857</td>
+                                    <td class="best-score">0.857</td>
+                                    <td class="best-score">1.000</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">BERT</td>
+                                    <td>0.609</td>
+                                    <td>0.609</td>
+                                    <td>0.073</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Prosody</td>
+                                    <td>0.604</td>
+                                    <td>0.604</td>
+                                    <td>0.143</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Hybrid</td>
+                                    <td>0.565</td>
+                                    <td>0.592</td>
+                                    <td>0.104</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">🔬</span>
+                        Ablation Study
+                    </h3>
+                    <div class="section-content">
+                        <p>Impact of scoring function weights (α: context, β: emotion, γ: intensity) on overall performance:</p>
+                        <div style="background: #f0f9ff; padding: 10px; border-radius: 6px; margin: 8px 0; border-left: 3px solid #0ea5e9;">
+                            <p style="font-size: 12px; margin: 2px 0; color: #0369a1;"><strong>✅ Best Configuration Found:</strong></p>
+                            <p style="font-size: 11px; margin: 2px 0;">α (context weight) = 0.400, β (emotion weight) = 0.600, γ (intensity weight) = 0.000</p>
+                            <p style="font-size: 12px; margin: 4px 0 2px 0; color: #0369a1;"><strong>📊 Performance Metrics:</strong></p>
+                            <p style="font-size: 11px; margin: 2px 0;">Emotion Accuracy: 84.3% | Music Relevance: 71.4% | Trigger Rate: 56.7% | <strong>Composite Score: 0.749</strong></p>
+                            <p style="font-size: 12px; margin: 4px 0 2px 0; color: #0369a1;"><strong>📈 Study Statistics:</strong></p>
+                            <p style="font-size: 11px; margin: 2px 0;">Configurations Tested: 21 | Average Accuracy: 67.2% | Average Relevance: 58.7%</p>
+                        </div>
+                        <p class="ablation-footnote">
+                            Composite Score = 0.5 × Accuracy + 0.3 × Relevance + 0.2 × Trigger Rate
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">📈</span>
+                        Emotional Stability Analysis
+                    </h3>
+                    <div class="section-content">
+                        <div class="figure-container">
+                            <div class="figure-image">
+                                <img src="stability_graph.png" alt="Emotional Stability Graph">
+                            </div>
+                            <div class="figure-caption">
+                                Figure 2: Emotional State Stability Over Time showing conversation turn analysis and transition thresholds
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">😊</span>
+                        Key Findings
+                    </h3>
+                    <div class="section-content">
+                        <ul>
+                            <li><b>Optimal Configuration:</b> α=0.40, β=0.60 achieved highest composite score (0.749)</li>
+                            <li><b>Keyword Baseline:</b> Perfect emotion detection but higher latency (125ms)</li>
+                            <li><b>Semantic Integration:</b> Critical for balancing accuracy and relevance</li>
+                            <li><b>Real-time Performance:</b> System maintains <100ms response time under normal load</li>
+                            <li><b>Context Sensitivity:</b> LLM integration improved contextual appropriateness by 23%</li>
+                            <li><b>Emotional Stability:</b> System tracks emotional state transitions with 0.7 stability threshold</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">🔮</span>
+                        Future Work
+                    </h3>
+                    <div class="section-content">
+                        <ul>
+                            <li>Real-time streaming integration for lower latency</li>
+                            <li>Multi-modal emotion detection (facial expressions, gestures)</li>
+                            <li>Personalized adaptation and user modeling</li>
+                            <li>Full production deployment and scalability testing</li>
+                            <li>Comprehensive user studies for real-world evaluation</li>
+                            <li>Integration with popular music streaming platforms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="section-icon">🙏</span>
+                        Acknowledgements
+                    </h3>
+                    <div class="section-content">
+                        <p>
+                            We thank the reviewers for their valuable feedback that helped identify areas for improvement. The next version of ANTASH-IRIS will be presented in the upcoming 4-5 months with open-source availability for the research community. Special thanks to the ISMIR LLM4MA workshop organizers for providing this platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="logo">ANTASH-IRIS</div>
+            
+        </div>
+    </div>
+</body>
+</html>
