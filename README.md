@@ -112,8 +112,6 @@ python antashiri_main.py setup
 ### Antashri-system/Antashri_system
 python antashiri_main.py run
 
-## 7. Open browser
-## Go to http://localhost:5000
 
 The notebook will automatically:
 - ✅ Install all dependencies
