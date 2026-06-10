@@ -272,28 +272,10 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 <br>
 
-**Made with ❤️ by the Antashiri Team**
 
 </div>
 
----
 
-## 📸 **Gallery (will be updated)**
-
-<div align="center">
-<table>
-<tr>
-<td><img src="docs/images/screenshot1.png" width="250" alt="Main Interface"></td>
-<td><img src="docs/images/screenshot2.png" width="250" alt="Emotion Detection"></td>
-<td><img src="docs/images/screenshot3.png" width="250" alt="Music Selection"></td>
-</tr>
-<tr>
-<td align="center"><i>Main Interface</i></td>
-<td align="center"><i>Real-time Emotion</i></td>
-<td align="center"><i>Music Selection</i></td>
-</tr>
-</table>
-</div>
 
 ---
 
